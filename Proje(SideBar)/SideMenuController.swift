@@ -1,20 +1,22 @@
 //
-//  ViewController.swift
+//  SideMenuController.swift
 //  Proje(SideBar)
 //
-//  Created by Tahir Bayraktar on 8.03.2023.
+//  Created by Tahir Bayraktar on 9.03.2023.
 //
 
 import UIKit
 import SideMenu
-class ViewController: UIViewController {
+
+class SideMenuController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
-        
     }
     
 
-}
+    
 
+}
