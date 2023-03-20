@@ -51,5 +51,10 @@ class ContactVC: UIViewController,MKMapViewDelegate {
             }
         }
     }
-
+    
+    @IBAction func linkedinURLClicked(_ sender: Any) {
+        
+        UIApplication.shared.open(URL(string: "https://www.linkedin.com/company/information-design-three/")!)
+    }
+    
 }

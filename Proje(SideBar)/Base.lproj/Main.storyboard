@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -455,6 +456,18 @@ Teknopark, A1 Blok No:111
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVL-l6-MdE">
+                                <rect key="frame" x="30" y="768" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="361-Uc-alw"/>
+                                    <constraint firstAttribute="width" constant="50" id="Te6-Zy-q3e"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="linkedln"/>
+                                <connections>
+                                    <action selector="linkedinURLClicked:" destination="lBY-a0-Wb4" eventType="touchUpInside" id="XoZ-2f-WIJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b6z-qt-GV0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -488,10 +501,12 @@ Teknopark, A1 Blok No:111
                             <constraint firstItem="anU-8P-tgt" firstAttribute="top" secondItem="zmP-Hl-Eem" secondAttribute="top" id="mIR-gH-SKK"/>
                             <constraint firstItem="qf7-e1-0CE" firstAttribute="leading" secondItem="anU-8P-tgt" secondAttribute="leading" id="n6i-vD-2vx"/>
                             <constraint firstItem="1KN-Kx-gQo" firstAttribute="top" secondItem="U7y-mc-TIg" secondAttribute="topMargin" constant="-44" id="rnS-xd-iLz"/>
+                            <constraint firstItem="TVL-l6-MdE" firstAttribute="leading" secondItem="SSY-5s-twa" secondAttribute="leading" id="sL6-Xf-JPK"/>
                             <constraint firstItem="anU-8P-tgt" firstAttribute="trailing" secondItem="Mj5-8V-QPb" secondAttribute="trailing" id="tT0-ZW-Q9S"/>
                             <constraint firstItem="Mj5-8V-QPb" firstAttribute="centerY" secondItem="bwD-kQ-A0D" secondAttribute="centerY" id="viT-Mp-K7Z"/>
                             <constraint firstItem="bwD-kQ-A0D" firstAttribute="leading" secondItem="NSs-bX-QTx" secondAttribute="leading" id="wAW-39-rx9"/>
                             <constraint firstItem="Xy4-mQ-XEh" firstAttribute="trailing" secondItem="Dmu-pA-kXx" secondAttribute="trailing" id="xYk-oN-Cxv"/>
+                            <constraint firstItem="TVL-l6-MdE" firstAttribute="top" secondItem="SSY-5s-twa" secondAttribute="bottom" constant="25" id="yQf-gU-Ddp"/>
                             <constraint firstItem="Dmu-pA-kXx" firstAttribute="trailing" secondItem="bwD-kQ-A0D" secondAttribute="trailing" id="yvV-nj-WVs"/>
                         </constraints>
                     </view>
@@ -606,16 +621,62 @@ Teknopark, A1 Blok No:111
                     <view key="view" contentMode="scaleToFill" id="f1I-b4-btr">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QN5-W0-fpn">
+                                <rect key="frame" x="0.0" y="264" width="393" height="222"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mXT-ME-EUu">
+                                    <size key="itemSize" width="336" height="183"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="videosCell" id="11D-VR-5gI" customClass="AVLPlayerCVCell" customModule="Proje_SideBar_" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="19.666666666666668" width="350" height="183"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gy6-Bz-Gsm">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="183"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jI9-8g-I36">
+                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="183"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="jI9-8g-I36" secondAttribute="trailing" id="0GX-PL-mXl"/>
+                                                <constraint firstItem="jI9-8g-I36" firstAttribute="leading" secondItem="gy6-Bz-Gsm" secondAttribute="leading" id="GvD-Yn-DbZ"/>
+                                                <constraint firstItem="jI9-8g-I36" firstAttribute="top" secondItem="gy6-Bz-Gsm" secondAttribute="top" id="ihx-tM-FFi"/>
+                                                <constraint firstAttribute="bottom" secondItem="jI9-8g-I36" secondAttribute="bottom" id="zGD-FI-EqF"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="350" height="183"/>
+                                        <connections>
+                                            <outlet property="videosImageView" destination="jI9-8g-I36" id="c8G-ww-jhT"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="id3" translatesAutoresizingMaskIntoConstraints="NO" id="bW5-9W-dSH">
+                                <rect key="frame" x="-1" y="-15" width="395" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="w0h-MF-0Zj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Wol-0W-ZBz">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="list.bullet" catalog="system" id="Tve-j2-DbK">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="nN3-ns-G0O" kind="show" id="Ne0-gP-vPL"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="videosCollectionView" destination="QN5-W0-fpn" id="dHA-YX-jjy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6jz-oF-jwQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -624,11 +685,12 @@ Teknopark, A1 Blok No:111
         <!--Navigation Controller-->
         <scene sceneID="hsw-GI-m61">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GZW-Ch-LAa" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="GZW-Ch-LAa" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hcW-EM-gOK">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="AccentColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -640,13 +702,19 @@ Teknopark, A1 Blok No:111
             <point key="canvasLocation" x="107.63358778625954" y="-66.197183098591552"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.016589623219999999" green="0.024424130150000001" blue="0.024125033479999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
         <image name="envelope" catalog="system" width="128" height="93"/>
         <image name="faxmachine" catalog="system" width="128" height="111"/>
         <image name="hakkımızda" width="728" height="776"/>
+        <image name="id3" width="406" height="248"/>
+        <image name="linkedln" width="50" height="50"/>
         <image name="list.bullet" catalog="system" width="128" height="87"/>
         <image name="mappin.and.ellipse" catalog="system" width="117" height="128"/>
         <image name="phone" catalog="system" width="128" height="115"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
