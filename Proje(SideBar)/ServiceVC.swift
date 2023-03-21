@@ -17,6 +17,8 @@ class ServiceVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        overrideUserInterfaceStyle = .light
+        
         serviceTableView.delegate = self
         serviceTableView.dataSource = self
         

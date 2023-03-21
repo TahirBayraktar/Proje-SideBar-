@@ -21,7 +21,9 @@ class ContactVC: UIViewController,MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       centerMapOnLocation(location: mapLocation)
+        overrideUserInterfaceStyle = .light
+        
+        centerMapOnLocation(location: mapLocation)
         annotation.title = "ID3"
         annotation.subtitle = "id3"
         annotation.coordinate = initialLocation

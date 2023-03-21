@@ -19,6 +19,8 @@ class PresentedVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        overrideUserInterfaceStyle = .light
+        
         worksTableView.delegate = self
         worksTableView.dataSource = self
         

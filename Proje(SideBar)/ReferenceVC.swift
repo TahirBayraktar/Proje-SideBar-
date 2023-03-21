@@ -18,6 +18,8 @@ class ReferenceVC: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        overrideUserInterfaceStyle = .light
+        
         refCollectionView.delegate = self
         refCollectionView.dataSource = self
 //        refCollectionView.collectionViewLayout = UICollectionViewLayout()
