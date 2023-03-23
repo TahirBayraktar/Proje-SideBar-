@@ -722,6 +722,9 @@ Teknopark, A1 Blok No:111
                                                     </backgroundConfiguration>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="Ac0-lM-X4J" kind="show" id="pnO-mO-K2V"/>
+                                                </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeImage2" translatesAutoresizingMaskIntoConstraints="NO" id="RpO-Fi-JIa">
                                                 <rect key="frame" x="0.0" y="727" width="393" height="215"/>
@@ -788,6 +791,9 @@ Teknopark, A1 Blok No:111
                                                     </backgroundConfiguration>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="NXI-g2-odz" kind="show" id="GYt-fT-hX5"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -896,6 +902,10 @@ Teknopark, A1 Blok No:111
             <point key="canvasLocation" x="107.63358778625954" y="-66.197183098591552"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="pnO-mO-K2V"/>
+        <segue reference="GYt-fT-hX5"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.016589623219999999" green="0.024424130150000001" blue="0.024125033479999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
         <image name="envelope" catalog="system" width="128" height="93"/>
