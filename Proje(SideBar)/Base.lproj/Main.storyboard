@@ -690,17 +690,42 @@ Teknopark, A1 Blok No:111
                                                     <constraint firstAttribute="height" constant="186" id="hVS-Bk-tTu"/>
                                                 </constraints>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Havacılık Ürünleri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cf1-lA-jo2">
+                                                <rect key="frame" x="0.0" y="411" width="393" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="tLg-0o-mng"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIW-o8-D8l">
+                                                <rect key="frame" x="0.0" y="455" width="393" height="186"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="186" id="rk2-YZ-WyI"/>
+                                                </constraints>
+                                                <string key="text">ID3 olarak havacılık sektöründe yer alan müşterilerimiz için kritik görev operasyonlarında kullanılan Havacılık Ürünleri geliştiriyoruz. 2011 yılından beri sahip olduğumuz tecrübe ve sürekli geliştirdiğimiz teknolojimiz sayesinde ürettiğimiz operasyon çözümleri ile her zaman, her yerde, kesintisiz hizmet sunuyoruz.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="zAP-mn-tH6" firstAttribute="leading" secondItem="BOy-bc-HBJ" secondAttribute="leading" id="4bC-BL-Fho"/>
+                                            <constraint firstItem="BIW-o8-D8l" firstAttribute="leading" secondItem="Cf1-lA-jo2" secondAttribute="leading" id="562-8P-IIU"/>
                                             <constraint firstItem="BOy-bc-HBJ" firstAttribute="leading" secondItem="RRf-vE-Ck1" secondAttribute="leading" id="KUy-fb-eQw"/>
                                             <constraint firstItem="zAP-mn-tH6" firstAttribute="trailing" secondItem="BOy-bc-HBJ" secondAttribute="trailing" id="NN1-TL-eHe"/>
+                                            <constraint firstItem="Cf1-lA-jo2" firstAttribute="trailing" secondItem="zAP-mn-tH6" secondAttribute="trailing" id="VZD-po-aO6"/>
                                             <constraint firstItem="zAP-mn-tH6" firstAttribute="top" secondItem="BOy-bc-HBJ" secondAttribute="bottom" id="Xjw-zm-kmj"/>
                                             <constraint firstItem="BOy-bc-HBJ" firstAttribute="centerX" secondItem="RRf-vE-Ck1" secondAttribute="centerX" id="aZ6-d8-j36"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1500" id="bkH-L3-Gem"/>
                                             <constraint firstAttribute="height" constant="1500" id="c78-QP-LOq"/>
+                                            <constraint firstItem="Cf1-lA-jo2" firstAttribute="leading" secondItem="zAP-mn-tH6" secondAttribute="leading" id="dCj-F2-bNF"/>
+                                            <constraint firstItem="Cf1-lA-jo2" firstAttribute="top" secondItem="RRf-vE-Ck1" secondAttribute="top" constant="411" id="oCF-SO-4sQ"/>
                                             <constraint firstItem="BOy-bc-HBJ" firstAttribute="top" secondItem="RRf-vE-Ck1" secondAttribute="top" id="pJO-oU-tIz"/>
+                                            <constraint firstItem="BIW-o8-D8l" firstAttribute="trailing" secondItem="Cf1-lA-jo2" secondAttribute="trailing" id="rEm-1q-o6z"/>
+                                            <constraint firstItem="BIW-o8-D8l" firstAttribute="top" secondItem="zAP-mn-tH6" secondAttribute="bottom" constant="43" id="ueB-In-twV"/>
                                         </constraints>
                                     </view>
                                 </subviews>
