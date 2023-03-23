@@ -76,7 +76,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Ac0-lM-X4J" kind="show" id="0Nc-MY-IGH"/>
+                                            <segue destination="Ac0-lM-X4J" kind="show" identifier="" id="0Nc-MY-IGH"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="XeF-IS-DOj">
@@ -438,6 +438,9 @@ Kritik kurumsal uygulamaları barındıran tüm sektörler için güvenilir bir 
                                 <buttonConfiguration key="configuration" style="plain" image="mappin.and.ellipse" catalog="system">
                                     <color key="baseForegroundColor" red="0.2235293984" green="0.50980395079999996" blue="0.92549026010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="mapClickedButton:" destination="lBY-a0-Wb4" eventType="touchUpInside" id="AG2-R5-AzE"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwD-kQ-A0D">
                                 <rect key="frame" x="65" y="603" width="298" height="72"/>
@@ -630,81 +633,100 @@ Teknopark, A1 Blok No:111
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QN5-W0-fpn">
-                                <rect key="frame" x="0.0" y="264" width="393" height="222"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mXT-ME-EUu">
-                                    <size key="itemSize" width="336" height="183"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="videosCell" id="11D-VR-5gI" customClass="AVLPlayerCVCell" customModule="Proje_SideBar_" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="19.666666666666668" width="300" height="183"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gy6-Bz-Gsm">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="183"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jI9-8g-I36">
-                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="183"/>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="jI9-8g-I36" secondAttribute="trailing" id="0GX-PL-mXl"/>
-                                                <constraint firstItem="jI9-8g-I36" firstAttribute="leading" secondItem="gy6-Bz-Gsm" secondAttribute="leading" id="GvD-Yn-DbZ"/>
-                                                <constraint firstItem="jI9-8g-I36" firstAttribute="top" secondItem="gy6-Bz-Gsm" secondAttribute="top" id="ihx-tM-FFi"/>
-                                                <constraint firstAttribute="bottom" secondItem="jI9-8g-I36" secondAttribute="bottom" id="zGD-FI-EqF"/>
-                                            </constraints>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="300" height="183"/>
-                                        <connections>
-                                            <outlet property="videosImageView" destination="jI9-8g-I36" id="c8G-ww-jhT"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="id3" translatesAutoresizingMaskIntoConstraints="NO" id="bW5-9W-dSH">
-                                <rect key="frame" x="-1" y="-15" width="395" height="250"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="id3" translatesAutoresizingMaskIntoConstraints="NO" id="bW5-9W-dSH">
+                                <rect key="frame" x="-8" y="-26" width="409" height="248"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sYG-5b-gTg">
-                                <rect key="frame" x="0.0" y="487" width="393" height="352"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="homeTableCell" rowHeight="259" id="Pnv-Zc-Mjn" customClass="HomePageTVCell" customModule="Proje_SideBar_" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="259"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pnv-Zc-Mjn" id="4l3-df-gMb">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="259"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Havacılık Ürünleri" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyl-92-lIb">
-                                                    <rect key="frame" x="7" y="164" width="386" height="34"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="id3plane" translatesAutoresizingMaskIntoConstraints="NO" id="I2x-jN-whd">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="156"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="homeImageView" destination="I2x-jN-whd" id="GYo-dG-FJF"/>
-                                            <outlet property="homeTitleLabel" destination="kyl-92-lIb" id="Jp4-IK-vr3"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1x9-4z-v7g">
+                                <rect key="frame" x="0.0" y="251" width="393" height="601"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RRf-vE-Ck1">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BOy-bc-HBJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="226"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="226" id="fdk-hf-elT"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bOL-Ai-Wc1">
+                                                    <size key="itemSize" width="336" height="183"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="videosCell" id="kt4-uI-AGC" customClass="AVLPlayerCVCell" customModule="Proje_SideBar_" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="21.666666666666668" width="300" height="183"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3ZH-0e-DkR">
+                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="183"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ETX-91-Pno">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="183"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="ETX-91-Pno" firstAttribute="centerX" secondItem="3ZH-0e-DkR" secondAttribute="centerX" id="S1H-wq-puW"/>
+                                                                <constraint firstItem="ETX-91-Pno" firstAttribute="top" secondItem="3ZH-0e-DkR" secondAttribute="top" id="nkT-k4-KHU"/>
+                                                                <constraint firstItem="ETX-91-Pno" firstAttribute="leading" secondItem="3ZH-0e-DkR" secondAttribute="leading" id="qO4-wr-BUj"/>
+                                                                <constraint firstItem="ETX-91-Pno" firstAttribute="centerY" secondItem="3ZH-0e-DkR" secondAttribute="centerY" id="z38-ec-ed1"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <size key="customSize" width="300" height="183"/>
+                                                        <connections>
+                                                            <outlet property="videosImageView" destination="ETX-91-Pno" id="8u2-38-T7g"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="ruU-nN-zW5" id="EXt-lD-wEw"/>
+                                                    <outlet property="delegate" destination="ruU-nN-zW5" id="Ira-ed-Z6O"/>
+                                                </connections>
+                                            </collectionView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="id3plane" translatesAutoresizingMaskIntoConstraints="NO" id="zAP-mn-tH6">
+                                                <rect key="frame" x="0.0" y="226" width="393" height="186"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="186" id="hVS-Bk-tTu"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="zAP-mn-tH6" firstAttribute="leading" secondItem="BOy-bc-HBJ" secondAttribute="leading" id="4bC-BL-Fho"/>
+                                            <constraint firstItem="BOy-bc-HBJ" firstAttribute="leading" secondItem="RRf-vE-Ck1" secondAttribute="leading" id="KUy-fb-eQw"/>
+                                            <constraint firstItem="zAP-mn-tH6" firstAttribute="trailing" secondItem="BOy-bc-HBJ" secondAttribute="trailing" id="NN1-TL-eHe"/>
+                                            <constraint firstItem="zAP-mn-tH6" firstAttribute="top" secondItem="BOy-bc-HBJ" secondAttribute="bottom" id="Xjw-zm-kmj"/>
+                                            <constraint firstItem="BOy-bc-HBJ" firstAttribute="centerX" secondItem="RRf-vE-Ck1" secondAttribute="centerX" id="aZ6-d8-j36"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1500" id="bkH-L3-Gem"/>
+                                            <constraint firstAttribute="height" constant="1500" id="c78-QP-LOq"/>
+                                            <constraint firstItem="BOy-bc-HBJ" firstAttribute="top" secondItem="RRf-vE-Ck1" secondAttribute="top" id="pJO-oU-tIz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RRf-vE-Ck1" firstAttribute="top" secondItem="1x9-4z-v7g" secondAttribute="top" id="0Uj-iO-2h3"/>
+                                    <constraint firstItem="RRf-vE-Ck1" firstAttribute="leading" secondItem="1x9-4z-v7g" secondAttribute="leading" id="2ZF-qe-CeI"/>
+                                    <constraint firstAttribute="bottom" secondItem="RRf-vE-Ck1" secondAttribute="bottom" id="QbT-bd-Jrd"/>
+                                    <constraint firstItem="RRf-vE-Ck1" firstAttribute="top" secondItem="1x9-4z-v7g" secondAttribute="top" id="XH0-RS-0Hk"/>
+                                    <constraint firstAttribute="trailing" secondItem="RRf-vE-Ck1" secondAttribute="trailing" id="Zfn-Ah-rzQ"/>
+                                    <constraint firstItem="RRf-vE-Ck1" firstAttribute="centerX" secondItem="1x9-4z-v7g" secondAttribute="centerX" id="q8z-uH-Hak"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="w0h-MF-0Zj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bW5-9W-dSH" firstAttribute="top" secondItem="f1I-b4-btr" secondAttribute="top" constant="-26" id="BdA-1o-pJU"/>
+                            <constraint firstItem="RRf-vE-Ck1" firstAttribute="height" secondItem="f1I-b4-btr" secondAttribute="height" multiplier="1.76056" id="Dlj-10-wL3"/>
+                            <constraint firstItem="RRf-vE-Ck1" firstAttribute="width" secondItem="f1I-b4-btr" secondAttribute="width" id="HeG-Cv-UGJ"/>
+                            <constraint firstItem="bW5-9W-dSH" firstAttribute="centerX" secondItem="1x9-4z-v7g" secondAttribute="centerX" id="Zws-Yh-zsM"/>
+                            <constraint firstItem="1x9-4z-v7g" firstAttribute="centerX" secondItem="f1I-b4-btr" secondAttribute="centerX" id="eBS-Rl-uLC"/>
+                            <constraint firstItem="bW5-9W-dSH" firstAttribute="leading" secondItem="f1I-b4-btr" secondAttribute="leadingMargin" constant="-24" id="klN-vh-PAU"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="1x9-4z-v7g" secondAttribute="bottom" constant="-34" id="mIO-tH-cxW"/>
+                            <constraint firstItem="1x9-4z-v7g" firstAttribute="leading" secondItem="w0h-MF-0Zj" secondAttribute="leading" id="rOk-eT-7Ra"/>
+                            <constraint firstItem="1x9-4z-v7g" firstAttribute="top" secondItem="bW5-9W-dSH" secondAttribute="bottom" constant="29" id="t0G-SM-aP8"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Wol-0W-ZBz">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="list.bullet" catalog="system" id="Tve-j2-DbK">
@@ -714,9 +736,10 @@ Teknopark, A1 Blok No:111
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <size key="freeformSize" width="393" height="852"/>
                     <connections>
-                        <outlet property="homeTableView" destination="sYG-5b-gTg" id="9lo-ZD-yZV"/>
-                        <outlet property="videosCollectionView" destination="QN5-W0-fpn" id="rkT-Kv-OZu"/>
+                        <outlet property="videosCollectionView" destination="BOy-bc-HBJ" id="XHT-VT-wKO"/>
+                        <segue destination="Ac0-lM-X4J" kind="show" identifier="workSegue" id="Xmb-rv-KQn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6jz-oF-jwQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -726,7 +749,7 @@ Teknopark, A1 Blok No:111
         <!--Navigation Controller-->
         <scene sceneID="hsw-GI-m61">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="GZW-Ch-LAa" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GZW-Ch-LAa" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hcW-EM-gOK">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -734,6 +757,9 @@ Teknopark, A1 Blok No:111
                         <color key="tintColor" name="AccentColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="znq-fk-PXe">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="ruU-nN-zW5" kind="relationship" relationship="rootViewController" id="gk3-k8-S4K"/>
                     </connections>
@@ -743,6 +769,9 @@ Teknopark, A1 Blok No:111
             <point key="canvasLocation" x="107.63358778625954" y="-66.197183098591552"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Xmb-rv-KQn"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.016589623219999999" green="0.024424130150000001" blue="0.024125033479999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
         <image name="envelope" catalog="system" width="128" height="93"/>

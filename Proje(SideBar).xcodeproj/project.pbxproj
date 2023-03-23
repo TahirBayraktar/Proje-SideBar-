@@ -16,7 +16,6 @@
 		4A69B41129C0601A002FD07B /* ReferenceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69B41029C0601A002FD07B /* ReferenceVC.swift */; };
 		4A69B41529C0608D002FD07B /* RefCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69B41429C0608D002FD07B /* RefCollectionViewCell.swift */; };
 		4A69B43729C1A8ED002FD07B /* ContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69B43629C1A8ED002FD07B /* ContactVC.swift */; };
-		4AACF04129C9B6FE003B999B /* HomePageTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AACF04029C9B6FE003B999B /* HomePageTVCell.swift */; };
 		4AF01E4029B8B66D00980399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF01E3F29B8B66D00980399 /* AppDelegate.swift */; };
 		4AF01E4229B8B66D00980399 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF01E4129B8B66D00980399 /* SceneDelegate.swift */; };
 		4AF01E4729B8B66D00980399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AF01E4529B8B66D00980399 /* Main.storyboard */; };
@@ -38,7 +37,6 @@
 		4A69B41029C0601A002FD07B /* ReferenceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceVC.swift; sourceTree = "<group>"; };
 		4A69B41429C0608D002FD07B /* RefCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefCollectionViewCell.swift; sourceTree = "<group>"; };
 		4A69B43629C1A8ED002FD07B /* ContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactVC.swift; sourceTree = "<group>"; };
-		4AACF04029C9B6FE003B999B /* HomePageTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTVCell.swift; sourceTree = "<group>"; };
 		4AF01E3C29B8B66D00980399 /* Proje(SideBar).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Proje(SideBar).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF01E3F29B8B66D00980399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AF01E4129B8B66D00980399 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,9 +67,51 @@
 			children = (
 				4A00F96F29C89ABF00E9BC63 /* ViewController.swift */,
 				4A00F96D29C8796400E9BC63 /* AVLPlayerCVCell.swift */,
-				4AACF04029C9B6FE003B999B /* HomePageTVCell.swift */,
 			);
 			path = HomePage;
+			sourceTree = "<group>";
+		};
+		4AACF04229CB09DA003B999B /* WorkPage */ = {
+			isa = PBXGroup;
+			children = (
+				4AF01E5B29B9C25600980399 /* PresentedVC.swift */,
+				4A69B40629BB22F6002FD07B /* WorksCell.swift */,
+			);
+			path = WorkPage;
+			sourceTree = "<group>";
+		};
+		4AACF04329CB0A22003B999B /* ServicePage */ = {
+			isa = PBXGroup;
+			children = (
+				4A69B40E29BF1979002FD07B /* ServiceVC.swift */,
+				4A69B40C29BF1126002FD07B /* ServiceCell.swift */,
+			);
+			path = ServicePage;
+			sourceTree = "<group>";
+		};
+		4AACF04429CB0A43003B999B /* AboutUsPage */ = {
+			isa = PBXGroup;
+			children = (
+				4A00F97129C89E0D00E9BC63 /* AboutUsVC.swift */,
+			);
+			path = AboutUsPage;
+			sourceTree = "<group>";
+		};
+		4AACF04529CB0A5C003B999B /* ReferencePage */ = {
+			isa = PBXGroup;
+			children = (
+				4A69B41029C0601A002FD07B /* ReferenceVC.swift */,
+				4A69B41429C0608D002FD07B /* RefCollectionViewCell.swift */,
+			);
+			path = ReferencePage;
+			sourceTree = "<group>";
+		};
+		4AACF04729CB10B0003B999B /* ContactPage */ = {
+			isa = PBXGroup;
+			children = (
+				4A69B43629C1A8ED002FD07B /* ContactVC.swift */,
+			);
+			path = ContactPage;
 			sourceTree = "<group>";
 		};
 		4AF01E3329B8B66D00980399 = {
@@ -103,14 +143,11 @@
 				4AF01E4A29B8B66F00980399 /* LaunchScreen.storyboard */,
 				4AF01E4D29B8B66F00980399 /* Info.plist */,
 				4AF01E5929B9B88A00980399 /* SideMenuController.swift */,
-				4AF01E5B29B9C25600980399 /* PresentedVC.swift */,
-				4A69B40629BB22F6002FD07B /* WorksCell.swift */,
-				4A69B40E29BF1979002FD07B /* ServiceVC.swift */,
-				4A69B40C29BF1126002FD07B /* ServiceCell.swift */,
-				4A69B41029C0601A002FD07B /* ReferenceVC.swift */,
-				4A69B41429C0608D002FD07B /* RefCollectionViewCell.swift */,
-				4A69B43629C1A8ED002FD07B /* ContactVC.swift */,
-				4A00F97129C89E0D00E9BC63 /* AboutUsVC.swift */,
+				4AACF04229CB09DA003B999B /* WorkPage */,
+				4AACF04329CB0A22003B999B /* ServicePage */,
+				4AACF04529CB0A5C003B999B /* ReferencePage */,
+				4AACF04729CB10B0003B999B /* ContactPage */,
+				4AACF04429CB0A43003B999B /* AboutUsPage */,
 			);
 			path = "Proje(SideBar)";
 			sourceTree = "<group>";
@@ -260,7 +297,6 @@
 				4AF01E4229B8B66D00980399 /* SceneDelegate.swift in Sources */,
 				4A00F97229C89E0D00E9BC63 /* AboutUsVC.swift in Sources */,
 				4A69B41129C0601A002FD07B /* ReferenceVC.swift in Sources */,
-				4AACF04129C9B6FE003B999B /* HomePageTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

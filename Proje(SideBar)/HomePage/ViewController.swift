@@ -12,26 +12,33 @@ import AVKit
 class ViewController: UIViewController {
     
     
-    @IBOutlet weak var homeTableView: UITableView!
+    
     
     @IBOutlet weak var videosCollectionView: UICollectionView!
     
+
     var videoImage = [UIImage]()
     var player : AVPlayer!
     var avpController = AVPlayerViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        homeTableView.delegate = self
-        homeTableView.dataSource = self
         
-        videosCollectionView.delegate = self
-        videosCollectionView.dataSource = self
+        overrideUserInterfaceStyle = .light
+        
+//        videosCollectionView.delegate = self
+//        videosCollectionView.dataSource = self
+        
         
         videoImage.append(UIImage(named: "id3Video1")!)
         videoImage.append(UIImage(named: "id3Video2")!)
         videoImage.append(UIImage(named: "id3Video3")!)
         
+    }
+    
+    @IBAction func detailClickedButton(_ sender: Any) {
+        
+        performSegue(withIdentifier: "workSegue", sender: nil)
     }
     
     func urlVideoPlayer(url:URL){
@@ -71,18 +78,5 @@ extension ViewController:UICollectionViewDataSource{
     }
     
 }
-extension ViewController:UITableViewDelegate{
-    
-}
-extension ViewController:UITableViewDataSource{
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = homeTableView.dequeueReusableCell(withIdentifier: "homeTableCell", for: indexPath) as! HomePageTVCell
-        cell.homeImageView.image = UIImage(named: "id3plane")
-        return cell
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return 1
-    }
-}
+
 

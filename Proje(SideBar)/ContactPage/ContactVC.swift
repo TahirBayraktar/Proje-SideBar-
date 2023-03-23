@@ -30,13 +30,8 @@ class ContactVC: UIViewController,MKMapViewDelegate {
         mapView.addAnnotation(annotation)
         
     }
-    
-    func centerMapOnLocation(location: CLLocation) {
-            let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
-            mapView.setRegion(coordinateRegion, animated: true)
-        }
-    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        
+//    MARK----Maps
+    @IBAction func mapClickedButton(_ sender: Any) {
         CLGeocoder().reverseGeocodeLocation(mapLocation) { Placemarks, error in
             
             if let placemark = Placemarks{
@@ -53,10 +48,17 @@ class ContactVC: UIViewController,MKMapViewDelegate {
             }
         }
     }
+    func centerMapOnLocation(location: CLLocation) {
+            let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+            mapView.setRegion(coordinateRegion, animated: true)
+        }
     
+    
+//    Linkedin Url
     @IBAction func linkedinURLClicked(_ sender: Any) {
         
         UIApplication.shared.open(URL(string: "https://www.linkedin.com/company/information-design-three/")!)
     }
+    
     
 }
