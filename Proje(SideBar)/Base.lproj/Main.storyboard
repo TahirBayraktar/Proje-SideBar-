@@ -709,42 +709,123 @@ Teknopark, A1 Blok No:111
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfB-fT-Qgb">
-                                                <rect key="frame" x="0.0" y="640" width="117" height="39"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63l-aj-0nA">
+                                                <rect key="frame" x="0.0" y="642" width="131" height="48"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="39" id="ORG-6I-jDa"/>
-                                                    <constraint firstAttribute="width" constant="117" id="cio-cB-7hM"/>
+                                                    <constraint firstAttribute="width" constant="131" id="OBR-E6-hcT"/>
+                                                    <constraint firstAttribute="height" constant="48" id="oas-Ud-lSw"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Detaylı Bilgi">
-                                                    <backgroundConfiguration key="background" cornerRadius="13">
+                                                    <backgroundConfiguration key="background" cornerRadius="16">
                                                         <color key="backgroundColor" red="0.2235293984" green="0.50980395079999996" blue="0.92549026010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </backgroundConfiguration>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="detailClickedButton:" destination="ruU-nN-zW5" eventType="touchUpInside" id="fmL-Jv-aOn"/>
-                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeImage2" translatesAutoresizingMaskIntoConstraints="NO" id="RpO-Fi-JIa">
+                                                <rect key="frame" x="0.0" y="727" width="393" height="215"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="215" id="cUK-ZS-5pN"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yazılım Ürün Geliştirme" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwl-nO-uBG">
+                                                <rect key="frame" x="0.0" y="955" width="393" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="2ar-V0-otV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZK-ET-Elk">
+                                                <rect key="frame" x="0.0" y="1015" width="393" height="165"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="165" id="bAR-or-bK4"/>
+                                                </constraints>
+                                                <string key="text">Müşterilerimizin ihtiyaçları doğrultusunda yazılımlar ve uygulamalar geliştiriyoruz. Geliştirdiğimiz tüm bileşenlerin bakım sürecini tasarlıyor; analiz, programlama, belgeleme, test etme ve hata düzeltme operasyonlarını gerçekleştiriyoruz</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPN-zy-Uu3">
+                                                <rect key="frame" x="0.0" y="1245" width="393" height="255"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kritik operasyonlarınız için kesintisiz çözümler" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YV7-wc-X6D">
+                                                        <rect key="frame" x="0.0" y="39" width="393" height="69"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="69" id="cnz-5X-4m1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="highlightedColor" systemColor="labelColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXR-Xf-bmg">
+                                                        <rect key="frame" x="0.0" y="110" width="393" height="117"/>
+                                                        <string key="text">Bilgi Teknolojileri alanındaki geniş tecrübemiz ve güncel teknolojleri adapte etme yeteneğimizle iş süreçlerinizde ihtiyacınız olan çözümleri üretiyoruz.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.2235293984" green="0.50980395079999996" blue="0.92549026010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstItem="YV7-wc-X6D" firstAttribute="leading" secondItem="mPN-zy-Uu3" secondAttribute="leading" id="6TX-lM-CFY"/>
+                                                    <constraint firstItem="cXR-Xf-bmg" firstAttribute="top" secondItem="YV7-wc-X6D" secondAttribute="bottom" constant="2" id="CD9-zV-a0S"/>
+                                                    <constraint firstItem="YV7-wc-X6D" firstAttribute="centerX" secondItem="mPN-zy-Uu3" secondAttribute="centerX" id="P58-ri-BdU"/>
+                                                    <constraint firstItem="cXR-Xf-bmg" firstAttribute="trailing" secondItem="YV7-wc-X6D" secondAttribute="trailing" id="cMf-u3-QFr"/>
+                                                    <constraint firstItem="cXR-Xf-bmg" firstAttribute="leading" secondItem="YV7-wc-X6D" secondAttribute="leading" id="dVW-Ha-61Q"/>
+                                                    <constraint firstAttribute="bottom" secondItem="cXR-Xf-bmg" secondAttribute="bottom" constant="28" id="dat-QB-9aB"/>
+                                                    <constraint firstItem="YV7-wc-X6D" firstAttribute="top" secondItem="mPN-zy-Uu3" secondAttribute="top" constant="39" id="tv7-hG-4uf"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEK-LZ-4EH">
+                                                <rect key="frame" x="0.0" y="1181" width="131" height="48"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Detaylı Bilgi">
+                                                    <backgroundConfiguration key="background" cornerRadius="16">
+                                                        <color key="backgroundColor" red="0.2235293984" green="0.50980395079999996" blue="0.92549026010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </backgroundConfiguration>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="1500" id="0gB-uW-N4o"/>
+                                            <constraint firstItem="pEK-LZ-4EH" firstAttribute="trailing" secondItem="63l-aj-0nA" secondAttribute="trailing" id="1Sc-eX-430"/>
                                             <constraint firstItem="zAP-mn-tH6" firstAttribute="leading" secondItem="BOy-bc-HBJ" secondAttribute="leading" id="4bC-BL-Fho"/>
                                             <constraint firstItem="BIW-o8-D8l" firstAttribute="leading" secondItem="Cf1-lA-jo2" secondAttribute="leading" id="562-8P-IIU"/>
-                                            <constraint firstItem="cfB-fT-Qgb" firstAttribute="leading" secondItem="BIW-o8-D8l" secondAttribute="leading" id="7n7-Yq-VmN"/>
-                                            <constraint firstItem="cfB-fT-Qgb" firstAttribute="top" secondItem="RRf-vE-Ck1" secondAttribute="top" constant="640" id="DqK-U4-5Bk"/>
+                                            <constraint firstItem="63l-aj-0nA" firstAttribute="leading" secondItem="BIW-o8-D8l" secondAttribute="leading" id="722-Sz-kct"/>
+                                            <constraint firstItem="63l-aj-0nA" firstAttribute="top" secondItem="BIW-o8-D8l" secondAttribute="bottom" constant="1" id="7Ov-Qv-pbN"/>
+                                            <constraint firstItem="Uwl-nO-uBG" firstAttribute="trailing" secondItem="RpO-Fi-JIa" secondAttribute="trailing" id="80i-EF-4dU"/>
                                             <constraint firstItem="BOy-bc-HBJ" firstAttribute="leading" secondItem="RRf-vE-Ck1" secondAttribute="leading" id="KUy-fb-eQw"/>
+                                            <constraint firstItem="RpO-Fi-JIa" firstAttribute="top" secondItem="63l-aj-0nA" secondAttribute="bottom" constant="37" id="LcX-lg-bNE"/>
+                                            <constraint firstItem="xZK-ET-Elk" firstAttribute="leading" secondItem="Uwl-nO-uBG" secondAttribute="leading" id="NLM-vK-LPz"/>
                                             <constraint firstItem="zAP-mn-tH6" firstAttribute="trailing" secondItem="BOy-bc-HBJ" secondAttribute="trailing" id="NN1-TL-eHe"/>
+                                            <constraint firstItem="mPN-zy-Uu3" firstAttribute="trailing" secondItem="xZK-ET-Elk" secondAttribute="trailing" id="PTo-bz-2KS"/>
+                                            <constraint firstItem="mPN-zy-Uu3" firstAttribute="top" secondItem="pEK-LZ-4EH" secondAttribute="bottom" constant="16" id="Qu2-mO-t1E"/>
+                                            <constraint firstItem="mPN-zy-Uu3" firstAttribute="top" secondItem="xZK-ET-Elk" secondAttribute="bottom" constant="65" id="Rzz-ox-4i1"/>
                                             <constraint firstItem="Cf1-lA-jo2" firstAttribute="trailing" secondItem="zAP-mn-tH6" secondAttribute="trailing" id="VZD-po-aO6"/>
                                             <constraint firstItem="zAP-mn-tH6" firstAttribute="top" secondItem="BOy-bc-HBJ" secondAttribute="bottom" id="Xjw-zm-kmj"/>
                                             <constraint firstItem="BOy-bc-HBJ" firstAttribute="centerX" secondItem="RRf-vE-Ck1" secondAttribute="centerX" id="aZ6-d8-j36"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1500" id="bkH-L3-Gem"/>
                                             <constraint firstAttribute="height" constant="1500" id="c78-QP-LOq"/>
                                             <constraint firstItem="Cf1-lA-jo2" firstAttribute="leading" secondItem="zAP-mn-tH6" secondAttribute="leading" id="dCj-F2-bNF"/>
+                                            <constraint firstItem="Uwl-nO-uBG" firstAttribute="leading" secondItem="RpO-Fi-JIa" secondAttribute="leading" id="eLH-QJ-dLh"/>
+                                            <constraint firstItem="RpO-Fi-JIa" firstAttribute="trailing" secondItem="BIW-o8-D8l" secondAttribute="trailing" id="gvu-Z6-dGy"/>
                                             <constraint firstItem="Cf1-lA-jo2" firstAttribute="top" secondItem="RRf-vE-Ck1" secondAttribute="top" constant="411" id="oCF-SO-4sQ"/>
+                                            <constraint firstItem="RpO-Fi-JIa" firstAttribute="leading" secondItem="63l-aj-0nA" secondAttribute="leading" id="ohT-m8-YuR"/>
+                                            <constraint firstItem="xZK-ET-Elk" firstAttribute="trailing" secondItem="Uwl-nO-uBG" secondAttribute="trailing" id="p22-s8-dnB"/>
+                                            <constraint firstAttribute="bottom" secondItem="mPN-zy-Uu3" secondAttribute="bottom" id="pAm-Dt-zYA"/>
                                             <constraint firstItem="BOy-bc-HBJ" firstAttribute="top" secondItem="RRf-vE-Ck1" secondAttribute="top" id="pJO-oU-tIz"/>
+                                            <constraint firstItem="Uwl-nO-uBG" firstAttribute="top" secondItem="RpO-Fi-JIa" secondAttribute="bottom" constant="13" id="pvn-TU-OCJ"/>
                                             <constraint firstItem="BIW-o8-D8l" firstAttribute="trailing" secondItem="Cf1-lA-jo2" secondAttribute="trailing" id="rEm-1q-o6z"/>
+                                            <constraint firstItem="xZK-ET-Elk" firstAttribute="top" secondItem="Uwl-nO-uBG" secondAttribute="bottom" constant="15" id="rNi-PS-umU"/>
+                                            <constraint firstItem="mPN-zy-Uu3" firstAttribute="leading" secondItem="xZK-ET-Elk" secondAttribute="leading" id="t7M-lu-Ww2"/>
                                             <constraint firstItem="BIW-o8-D8l" firstAttribute="top" secondItem="zAP-mn-tH6" secondAttribute="bottom" constant="43" id="ueB-In-twV"/>
+                                            <constraint firstItem="pEK-LZ-4EH" firstAttribute="top" secondItem="xZK-ET-Elk" secondAttribute="bottom" constant="1" id="v6h-5R-McE"/>
+                                            <constraint firstItem="pEK-LZ-4EH" firstAttribute="leading" secondItem="xZK-ET-Elk" secondAttribute="leading" id="zQz-tc-WmU"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -754,7 +835,11 @@ Teknopark, A1 Blok No:111
                                     <constraint firstAttribute="bottom" secondItem="RRf-vE-Ck1" secondAttribute="bottom" id="QbT-bd-Jrd"/>
                                     <constraint firstItem="RRf-vE-Ck1" firstAttribute="top" secondItem="1x9-4z-v7g" secondAttribute="top" id="XH0-RS-0Hk"/>
                                     <constraint firstAttribute="trailing" secondItem="RRf-vE-Ck1" secondAttribute="trailing" id="Zfn-Ah-rzQ"/>
+                                    <constraint firstItem="RRf-vE-Ck1" firstAttribute="top" secondItem="1x9-4z-v7g" secondAttribute="top" id="bSD-cj-q5M"/>
+                                    <constraint firstAttribute="trailing" secondItem="RRf-vE-Ck1" secondAttribute="trailing" id="lHk-lD-U1v"/>
                                     <constraint firstItem="RRf-vE-Ck1" firstAttribute="centerX" secondItem="1x9-4z-v7g" secondAttribute="centerX" id="q8z-uH-Hak"/>
+                                    <constraint firstAttribute="bottom" secondItem="RRf-vE-Ck1" secondAttribute="bottom" id="ruF-I3-5en"/>
+                                    <constraint firstItem="RRf-vE-Ck1" firstAttribute="leading" secondItem="1x9-4z-v7g" secondAttribute="leading" id="xG1-9T-MeE"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -762,7 +847,6 @@ Teknopark, A1 Blok No:111
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="bW5-9W-dSH" firstAttribute="top" secondItem="f1I-b4-btr" secondAttribute="top" constant="-26" id="BdA-1o-pJU"/>
-                            <constraint firstItem="RRf-vE-Ck1" firstAttribute="height" secondItem="f1I-b4-btr" secondAttribute="height" multiplier="1.76056" id="Dlj-10-wL3"/>
                             <constraint firstItem="RRf-vE-Ck1" firstAttribute="width" secondItem="f1I-b4-btr" secondAttribute="width" id="HeG-Cv-UGJ"/>
                             <constraint firstItem="bW5-9W-dSH" firstAttribute="centerX" secondItem="1x9-4z-v7g" secondAttribute="centerX" id="Zws-Yh-zsM"/>
                             <constraint firstItem="1x9-4z-v7g" firstAttribute="centerX" secondItem="f1I-b4-btr" secondAttribute="centerX" id="eBS-Rl-uLC"/>
@@ -783,7 +867,6 @@ Teknopark, A1 Blok No:111
                     <size key="freeformSize" width="393" height="852"/>
                     <connections>
                         <outlet property="videosCollectionView" destination="BOy-bc-HBJ" id="XHT-VT-wKO"/>
-                        <segue destination="Ac0-lM-X4J" kind="show" identifier="workSegue" id="Xmb-rv-KQn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6jz-oF-jwQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -813,14 +896,12 @@ Teknopark, A1 Blok No:111
             <point key="canvasLocation" x="107.63358778625954" y="-66.197183098591552"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Xmb-rv-KQn"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.016589623219999999" green="0.024424130150000001" blue="0.024125033479999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
         <image name="envelope" catalog="system" width="128" height="93"/>
         <image name="faxmachine" catalog="system" width="128" height="111"/>
         <image name="hakkımızda" width="728" height="776"/>
+        <image name="homeImage2" width="1118" height="790"/>
         <image name="id3" width="406" height="248"/>
         <image name="id3plane" width="1212" height="782"/>
         <image name="linkedln" width="50" height="50"/>
@@ -830,6 +911,9 @@ Teknopark, A1 Blok No:111
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

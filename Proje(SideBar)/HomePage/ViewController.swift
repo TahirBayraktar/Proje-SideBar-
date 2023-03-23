@@ -36,11 +36,10 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func detailClickedButton(_ sender: Any) {
-        performSegue(withIdentifier: "workSegue", sender: nil)
-    }
+ 
 
     
+
     func urlVideoPlayer(url:URL){
         let urls = url
         player = AVPlayer(url: urls)
