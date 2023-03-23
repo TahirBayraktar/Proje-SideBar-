@@ -709,11 +709,30 @@ Teknopark, A1 Blok No:111
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfB-fT-Qgb">
+                                                <rect key="frame" x="0.0" y="640" width="117" height="39"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="39" id="ORG-6I-jDa"/>
+                                                    <constraint firstAttribute="width" constant="117" id="cio-cB-7hM"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Detaylı Bilgi">
+                                                    <backgroundConfiguration key="background" cornerRadius="13">
+                                                        <color key="backgroundColor" red="0.2235293984" green="0.50980395079999996" blue="0.92549026010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </backgroundConfiguration>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="detailClickedButton:" destination="ruU-nN-zW5" eventType="touchUpInside" id="fmL-Jv-aOn"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="zAP-mn-tH6" firstAttribute="leading" secondItem="BOy-bc-HBJ" secondAttribute="leading" id="4bC-BL-Fho"/>
                                             <constraint firstItem="BIW-o8-D8l" firstAttribute="leading" secondItem="Cf1-lA-jo2" secondAttribute="leading" id="562-8P-IIU"/>
+                                            <constraint firstItem="cfB-fT-Qgb" firstAttribute="leading" secondItem="BIW-o8-D8l" secondAttribute="leading" id="7n7-Yq-VmN"/>
+                                            <constraint firstItem="cfB-fT-Qgb" firstAttribute="top" secondItem="RRf-vE-Ck1" secondAttribute="top" constant="640" id="DqK-U4-5Bk"/>
                                             <constraint firstItem="BOy-bc-HBJ" firstAttribute="leading" secondItem="RRf-vE-Ck1" secondAttribute="leading" id="KUy-fb-eQw"/>
                                             <constraint firstItem="zAP-mn-tH6" firstAttribute="trailing" secondItem="BOy-bc-HBJ" secondAttribute="trailing" id="NN1-TL-eHe"/>
                                             <constraint firstItem="Cf1-lA-jo2" firstAttribute="trailing" secondItem="zAP-mn-tH6" secondAttribute="trailing" id="VZD-po-aO6"/>
