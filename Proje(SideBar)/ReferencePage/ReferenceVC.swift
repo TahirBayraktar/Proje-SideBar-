@@ -24,10 +24,10 @@ class ReferenceVC: UIViewController{
         refCollectionView.dataSource = self
 //        refCollectionView.collectionViewLayout = UICollectionViewLayout()
         
-        refImages.append(UIImage(named: "refindex0")!)
-        refImages.append(UIImage(named: "refindex1")!)
-        refImages.append(UIImage(named: "refindex2")!)
-        refImages.append(UIImage(named: "refindex3")!)
+        refImages.append(UIImage(named: "Refindex0")!)
+        refImages.append(UIImage(named: "Refindex1")!)
+        refImages.append(UIImage(named: "Refindex2")!)
+        refImages.append(UIImage(named: "Refindex3")!)
         refImages.append(UIImage(named: "refindex4")!)
         refImages.append(UIImage(named: "refindex5")!)
         refImages.append(UIImage(named: "refindex6")!)
