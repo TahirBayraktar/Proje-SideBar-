@@ -58,6 +58,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ruU-nN-zW5" kind="show" id="AXg-1u-QSn"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Jqj-W9-OC2">
                                         <rect key="frame" x="0.0" y="93.666667938232422" width="393" height="43.666667938232422"/>
@@ -903,6 +906,7 @@ Teknopark, A1 Blok No:111
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="gk3-k8-S4K"/>
         <segue reference="pnO-mO-K2V"/>
         <segue reference="GYt-fT-hX5"/>
     </inferredMetricsTieBreakers>
